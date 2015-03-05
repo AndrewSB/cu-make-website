@@ -1,1 +1,1 @@
-.fullscreen{height:600px}#landing{position:relative;z-index:1}#about{background-image:url("../img/MakeAThon_background2.jpg");width:100%;min-height:500px;background-size:100%;height:100%}h1 h2 h3 h4 h5 h6{text-align:center}
+.fullscreen{height:600px;z-index:0}#landing{vertical-align:middle}#about{background-image:url("../img/MakeAThon_background2.jpg");width:100%;min-height:500px;background-size:100%;height:100%}h1 h2 h3 h4 h5 h6{text-align:center}
