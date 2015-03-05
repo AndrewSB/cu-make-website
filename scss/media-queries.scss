@@ -9,12 +9,16 @@
 		img {
 		max-width: none;
 		width: 1024px;
-		margin-left: -341px;
 		height: 100%;
+		overflow: hidden;
 		}
 		h1 h3 button {
 			width: 40%;
 		}
+	}
+
+	#landing {
+		height: 25%;
 	}
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
