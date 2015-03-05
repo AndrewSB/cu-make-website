@@ -6,11 +6,12 @@
 @media only screen and (max-width: 40em) { 
 	.fullscreen {
 		height: 80%;
-		img {
-		max-width: none;
-		width: 1024px;
-		height: 100%;
 		overflow: hidden;
+		img {
+			max-width: none;
+			width: 1024px;
+			height: 100%;
+			margin-left: -250px;
 		}
 		h1 h3 button {
 			width: 40%;
