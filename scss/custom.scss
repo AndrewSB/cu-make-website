@@ -29,7 +29,57 @@
 }
 
 #about {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
 
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+    height: 40%;
+
+    img {
+        height: 200px;
+        width: auto;
+    }
+}
+
+#inforgraphic {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+    height: 40%;
+
+    img {
+        height: 200px;
+        width: auto;
+    }
+}
+
+#schedule {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+    height: 40%;
+
+    img {
+        height: 200px;
+        width: auto;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
