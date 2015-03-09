@@ -1,8 +1,19 @@
+#header {
+  text-align: center;
+  
+}
+
 /* Navigation */
 #nav {
   text-align: center;
   margin: 0px auto;
   font-size: 1em;
+}
+
+#nav a {
+  font-weight: 700;
+  color: #7E464C;
+  font-style: bold;
 }
 
 #nav ul {
