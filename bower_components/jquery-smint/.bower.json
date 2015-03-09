@@ -1,0 +1,14 @@
+{
+  "name": "jquery-smint",
+  "homepage": "https://github.com/rabmyself/smint",
+  "_release": "f060951513",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f06095151378db0e71380d11b835994596c08036"
+  },
+  "_source": "git://github.com/rabmyself/smint.git",
+  "_target": "*",
+  "_originalSource": "jquery-smint",
+  "_direct": true
+}
