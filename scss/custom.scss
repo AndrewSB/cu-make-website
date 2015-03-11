@@ -4,6 +4,30 @@
 .fullscreen {
     z-index: 0;
     position:relative;
+    width: 100vw;
+    height: 100vh;
+
+    #landingvideo {
+        position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // transform: translateY(-50%) translateX(-50%);
+
+        width: 100vw;
+        height: auto;
+
+        overflow: none; 
+        // min-width: 100vw;
+        // min-height: 100vh;
+        // width: auto;
+        // height: auto;
+        // background-size: cover;
+        // position: absolute;
+        // top: 0;
+        // left: 0; 
+        // bottom: 0;
+        // right: 0;
+    }
 
     img {
         width: 100%;
@@ -85,6 +109,10 @@
 h1, h2, h3, h4, h5, h6, li {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    
+}
+
+li {
+    display: inline;
+
 }
 
