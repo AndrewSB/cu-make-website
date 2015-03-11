@@ -14,7 +14,8 @@ module.exports = function(grunt) {
           'css/app.css': 'scss/app.scss',
           'css/custom.css': 'scss/custom.scss',
           'css/media-queries.css': 'scss/media-queries.scss',
-          'css/navigation.css': 'scss/navigation.scss'
+          'css/navigation.css': 'scss/navigation.scss',
+          'css/background-video.css': 'scss/background-video.scss'
         }
       }
     },
