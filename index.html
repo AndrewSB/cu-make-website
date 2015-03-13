@@ -1,74 +1,145 @@
 <!doctype html>
-
-
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CU Make</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
-    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <div class="fullscreen">
-      <video loop id="landingvideo" src="media/media.mp4" autoplay="true"></video>
-      <div id="landing" class="scrollto">
-        <img src="img/cu-make-logo.png" />
-        <h4><i>other shit thats apprently cool</i></h4>
-        <h3>April. 11. 2014.</h3>
-        <button>Register</button>
-      </div>
-    </div>
-    <div id="header" class="header">
-      <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-          <ul class="contain-to-grid">
-            <li><a>ABOUT</a></li>
-            <li><a>WHY MAKE?</a></li>
-            <li><a>SCHEDULE</a></li>
-            <li><a>FAQ</a></li>
-            <li><a>CONTACT</a></li>
-            <li><a>SPONSOR</a></li>
-          </ul>
-        </nav>
-      </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CU Make</title>
+<!--        <link rel="stylesheet" type="text/css" href="css/app.css" />-->
+        <link rel="stylesheet" type="text/css" href="scss/custom.css" />
+<!--        <link rel="stylesheet" type="text/css" href="css/media-queries.css" />-->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section class="splash">
+            <video autoplay loop>
+                <source src="media/media.mp4" type="video/mp4">
+            </video>
+            <div class="landing scrollto">
+                <img src="img/cu-make-logo.png" />
+                <h3>April 11th, 2014</h3>
+                <button>Register</button>
+            </div>
+        </section>
 
-    </div>
-    <div class="fullscreen">
-      <img src="img/MakeAThon_background2.jpg" />
-      <div id="about" class="scrollto"></div>
-        <h1>The aim of this event is to bring together the different design and maker oriented groups in the CU community together to share knowledge and learn by doing.</h1>
-        <!-- <ul>
-          <li>The aim of this event is to bring together the different design and maker oriented groups in the CU community together to share knowledge and learn by doing.</li>
-          <li></li>
-        </ul> -->
-      </div>
-    </div>
-    <div class="fullscreen">
-      <img src="img/bg3.jpg" />
-      <div id="infographic" class="scrollto">
-        <ul>
-          <li>Home</li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div class="fullscreen">
-      <img src="img/bg4.jpg" />
-      <div id="schedule" class="scrollto">
-        <p>We in this</p>
-      </div>
-    </div>
+        <div style="height: 70px;">
+            <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+                <ul class="contain-to-grid">
+                    <li><a data-scroll="about">About</a></li>
+                    <li><a data-scroll="why">Why make?</a></li>
+                    <li><a data-scroll="schedule">Schedule</a></li>
+                    <li><a data-scroll="faq">FAQ</a></li>
+                    <li><a data-scroll="contact">Contact</a></li>
+                    <li><a data-scroll="sponsor">Sponsor</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <!-- SCRIPTS -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="bower_components/modernizr/modernizr.js"></script>
+        <section data-anchor="about" class="about">
+            <div class="content">
+                <h2>The aim of this event is to bring together the different design and maker oriented groups in the CU community to share knowledge and learn by doing.</h2>
+            </div>
+        </section>
+        
+        <section data-anchor="schedule" class="schedule clearfix">
+            <div class="content">
+                <h2>Schedule</h2>
+                <dl>
+                    <dt>9:00 AM</dt>
+                    <dd>Opening Address</dd>
+                    <dt>9:30 AM</dt>
+                    <dd>Project brief, form teams, start making</dd>
+                    <dt>11:00 AM</dt>
+                    <dd>1st Workshop Sessions
+                        <p>
+                            Human-Centered Design<br>
+                            Creativity Workshop<br>
+                            Quick and Dirty Prototyping<br>
+                            Drawing Workshop<br>
+                            TinkerCAD
+                        </p>
+                    </dd>
+                    <dt>1:00 PM</dt>
+                    <dd>Lunch</dd>
+                    <dt>2:00 PM</dt>
+                    <dd>2nd Workshop Sessions
+                        <p>
+                            3D CAD Modeling with Autodesk Fusion 360<br>
+                            E-textiles<br>
+                            Arduino<br>
+                            Laser Cutting
+                        </p>
+                    </dd>
+                    <dt>6:00 PM</dt>
+                    <dd>Dinner</dd>
+                    <dt>8:00 PM</dt>
+                    <dd>Movie Screening: Maker</dd>
+                    <dt>12:00 AM</dt>
+                    <dd>Night snacks &amp; fun activity</dd>
+                    <dt>8:00 AM</dt>
+                    <dd>Breakfast</dd>
+                    <dt>10:00 AM</dt>
+                    <dd>Closing Remarks and Expo</dd>
+                    <dt>10:00 AM</dt>
+                    <dd>Clean up</dd>
+                </dl>
+            </div>
+        </section>
+        
+        <section data-anchor="faq" class="faq">
+            <div class="content">
+                <h2>Frequently Asked Questions</h2>
+                <article class="w1">
+                    <h3>Who can attend?</h3>
+                    <p>
+                        The event is open to students and the general public of all ages and experience levels. We are aiming for 150 participants!
+                    </p>
+                </article>
+                <article class="w2">
+                    <h3>What can I expect to build?</h3>
+                    <p>
+                        Depending on your skill level, the 28 hour event might result in different outcomes. Beginners can expect to make foam and cardboard mockups. You could also learn 3D CAD and print a basic version of your idea! More experiences teams will probably be able to make something that actually works like a potential product.
+                    </p>
+                </article>
+                <article class="w1">
+                    <h3>I don't have a team.<br> 
+                        Can I still participate?</h3>
+                    <p>
+                        Yes! We will try to help form teams or augment existing teams with your talents! We hope to have teams no bigger than 5 people.
+                    </p>
+                </article>
+                <article class="w2">
+                    <h3>What materials &amp; tools will be available?</h3>
+                    <p>
+                        We will have basic raw materials like acrylic, wood, and fasteners. Due to safety concerns we will try and avoid metalworking. We will also have a small number of wearable electronics and arduinos for hacking. Tools-wise we be providing sewing machines, soldering irons, 3D printers, laser cutters, and a typical set of hand tools, including drills and saws. The friendly volunteers from Fablab and Makerspace Urbana will be on hand to help!
+                    </p>
+                </article>
+                <article class="w1">
+                    <h3>Will there be food?</h3>
+                    <p>
+                        We are in the process of securing food donations right now for the 3 main meals. We will definitely have snacks provided throughout the duration of the event!
+                    </p>
+                </article>
+                <article class="w1">
+                    <h3>I don't have an idea, what should I make?</h3>
+                    <p>
+                        This.... doesn't really answer the question.
+                    </p>
+                </article>
+                <article class="w1">
+                    <h3>I am a beginner and have no experience. Am I still welcome?</h3>
+                    <p>
+                        Yes! Beginners are encouraged to come! We will be hosting some cool workshops to inspire you and kickstart your maker journey. If you want to learn to use a tool, just ask a volunteer and they can help you out!
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Other shizz -->
-  </body>
+        <!-- SCRIPTS -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+        <!-- Other shizz -->
+    </body>
 </html>

@@ -1,1 +1,1 @@
-@media only screen{.fullscreen .player{display:none}}@media only screen and (max-width: 40em){.fullscreen{height:80%;overflow:hidden}.fullscreen #bg{max-width:none;width:1024px;height:100%;margin-left:-250px}.fullscreen h1 h3 button{width:40%}#landing{height:25%}#about{height:25%}}@media only screen and (min-width: 90.063em){#landing{height:10%}}@media only screen and (min-width: 90.063em) and (max-width: 120em){#landing{height:10%}}@media only screen and (min-width: 120.063em){#landing{height:10%}}
+@media only screen{.fullscreen .player{display:none}}

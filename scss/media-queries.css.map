@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "media-queries.css",
+  "sources": [
+    "media-queries.scss"
+  ],
+  "names": [],
+  "mappings": "AACA;;EAAA,YAAY;IACF,SAAS",
+  "sourceRoot": ""
+}

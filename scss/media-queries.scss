@@ -5,27 +5,6 @@
 }} /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { 
-	.fullscreen {
-		height: 80%;
-		overflow: hidden;
-		#bg {
-			max-width: none;
-			width: 1024px;
-			height: 100%;
-			margin-left: -250px;
-		}
-		h1 h3 button {
-			width: 40%;
-		}
-	}
-
-	#landing {
-		height: 25%;
-	}
-
-	#about {
-		height: 25%;
-	}
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
@@ -40,20 +19,11 @@
 
 // XLarge screens
 @media only screen and (min-width: 90.063em) {
-	#landing {
-		height: 10%;
-	}
 } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-	#landing {
-		height: 10%;
-	}
 } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 // XXLarge screens
 @media only screen and (min-width: 120.063em) { 
-	#landing {
-		height: 10%;
-	}
 } /* min-width 1921px, xxlarge screens */
