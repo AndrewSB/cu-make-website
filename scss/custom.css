@@ -255,7 +255,7 @@ body {
 
 /* line 101, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .about {
-  background: url(/img/bg3.jpg) no-repeat center center;
+  background: url(../img/bg3.jpg) no-repeat center center;
   background-size: cover;
   padding: 300px 0;
   text-align: center; }
@@ -270,7 +270,7 @@ body {
 
 /* line 121, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .schedule {
-  background: url(/img/bg4.jpg) no-repeat center center;
+  background: url(../img/bg4.jpg) no-repeat center center;
   background-size: cover;
   padding: 120px 0;
   color: #fff; }
