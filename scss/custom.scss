@@ -18,7 +18,7 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
 
 .splash {
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: 100vh;
     min-height: 600px;
     position: relative;
     overflow: hidden;
@@ -35,6 +35,15 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
         z-index: -3; 
         overflow: hidden;
     }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .landing {
@@ -96,7 +105,6 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
     padding: 0 20px;
     width: 100%;
     max-width: 800px;
-    line-height: 2.5em;
 }
 
 .about {
@@ -116,6 +124,137 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
         
         letter-spacing: 2px;
         color: #fff;
+    }
+}
+
+.why {
+    padding: 120px 0;
+    text-align: center;
+    color: $blue;
+    
+    > div {
+        max-width: 1200px;
+    }
+    
+    h2 {
+        text: { transform: uppercase; }
+        font: { size: 1.2em; }
+        margin-bottom: 50px;
+    }
+    
+    h3 {
+        font: { family: 'Crimson Text'; style: italic; }
+        max-width: 600px;
+        margin: 0 auto 80px;
+        
+        span {
+            color: $red;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.categories {
+    a {
+        display: inline-block;
+        width: 120px;
+        height: 110px;
+        line-height: 240px;
+        margin-right: 40px;
+        
+        cursor: pointer;
+        text: { transform: uppercase; align: center; }
+        font: { size: .8em; }
+        color: #888;
+        
+        &:hover, &.active {
+            color: $blue;
+        }
+    }
+    
+    a:last-child {
+        margin-right: 0;
+    }
+}
+
+a[data-cat="home"] {
+    background: url(../img/icons/home-nocolor.png) no-repeat center center;
+    background-size: 100px 100px;
+    
+    &:hover, &.active {
+        background: url(../img/icons/home-color.png) no-repeat center center;
+        background-size: 100px 100px;
+    }
+}
+
+a[data-cat="stores"] {
+    background: url(../img/icons/icons-02.png) no-repeat center center;
+    background-size: 100px 100px;
+    
+    &:hover, &.active {
+        background: url(../img/icons/store-color.png) no-repeat center center;
+        background-size: 100px 100px;
+    }
+}
+
+a[data-cat="mobility"] {
+    background: url(../img/icons/mobility-nocolor.png) no-repeat center center;
+    background-size: 100px 100px;
+    
+    &:hover, &.active {
+        background: url(../img/icons/mobility-color.png) no-repeat center center;
+        background-size: 100px 100px;
+    }
+}
+
+a[data-cat="communication"] {
+    background: url(../img/icons/communication-nocolor.png) no-repeat center center;
+    background-size: 100px 100px;
+    
+    &:hover, &.active {
+        background: url(../img/icons/communication-color.png) no-repeat center center;
+        background-size: 100px 100px;
+    }
+}
+
+a[data-cat="etc"] {
+    background: url(../img/icons/misc-nocolor.png) no-repeat center center;
+    background-size: 100px 100px;
+    
+    &:hover, &.active {
+        background: url(../img/icons/misc-color.png) no-repeat center center;
+        background-size: 100px 100px;
+    }
+}
+
+.icons {
+    margin-top: 60px;
+}
+
+.icons > div {
+    display: none;
+    margin: 0 auto;
+    
+    &.active { display: block; }
+    
+    div {
+        display: inline-block;
+        margin-right: 40px;
+    }
+    
+    div:last-child { margin-right: 0; }
+    
+    img { width: 90px; }
+    
+    span {
+        display: block;
+        max-width: 90px;
+    }
+}
+
+.icons [data-icons="communication"] {
+    div {
+        margin-right: 50px;
     }
 }
 
@@ -182,11 +321,13 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
         color: $blue;
         font: { family: 'Crimson Text'; weight: 700; style: italic; }
         letter-spacing: 1px;
+        line-height: 1.1em;
     }
     
     p {
         margin-top: 12px;
         font: { size: .8em; }
+        line-height: 1.6em;
         color: #777;
     }
     
@@ -196,6 +337,45 @@ body { overflow-x: hidden; font-family: 'Montserrat'; }
     
     .w2 {
         @include span(2/3);
+    }
+}
+
+.sponsors {
+    padding: 120px 0;
+    background-color: #eee;
+    
+    h2 {
+        color: $blue;
+        text: { transform: uppercase; align: center; }
+        font: { size: 2em; }
+        margin-bottom: 140px;
+    }
+    
+    img {
+        width: 40%;
+        height: auto;
+        float: right;
+        margin-bottom: 50px;
+    }
+    
+    img:nth-child(odd) {
+        float: left;
+    }
+}
+
+.contact {
+    padding: 20px 0;
+    text-align: center;
+    
+    h3 {
+        font: { weight: 400; size: 1em; }
+    }
+    
+    a {
+        text-decoration: none; 
+        color: $blue;
+        
+        &:hover { color: $red; }
     }
 }
 

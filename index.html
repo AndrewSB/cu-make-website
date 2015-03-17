@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CU Make</title>
 <!--        <link rel="stylesheet" type="text/css" href="css/app.css" />-->
-        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="scss/custom.css" />
 <!--        <link rel="stylesheet" type="text/css" href="css/media-queries.css" />-->
         <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
     </head>
@@ -14,10 +14,12 @@
             <video autoplay loop poster="img/MakeAThon_background1.jpg">
                 <source src="media/media.mp4" type="video/mp4">
             </video>
-            <div class="landing scrollto">
-                <img src="img/cu-make-logo.png" />
-                <h3>April 11th, 2014</h3>
-                <button type="submit" onClick="location.href='https://zonghe.typeform.com/to/njiiPU'">Register</button>
+            <div class="overlay">
+                <div class="landing scrollto">
+                    <img src="img/cu-make-logo.png" />
+                    <h3>April 11th, 2014</h3>
+                    <button type="submit" onClick="location.href='https://zonghe.typeform.com/to/njiiPU'">Register</button>
+                </div>
             </div>
         </section>
 
@@ -28,15 +30,121 @@
                     <li><a data-scroll="why">Why make?</a></li>
                     <li><a data-scroll="schedule">Schedule</a></li>
                     <li><a data-scroll="faq">FAQ</a></li>
+                    <li><a data-scroll="sponsors">Sponsors</a></li>
                     <li><a data-scroll="contact">Contact</a></li>
-                    <li><a data-scroll="sponsor">Sponsor</a></li>
                 </ul>
             </nav>
         </div>
 
         <section data-anchor="about" class="about">
             <div class="content">
-                <h2>The aim of this event is to bring together the different design and maker oriented groups in the CU community to share knowledge and learn by doing.</h2>
+                <h2>CU Make is a 30 hour make-a-thon where participants work together to build physical prototypes and mockups centered around a given theme. For our inaugural event, the theme we are focusing on is elderly accessibility.</h2>
+            </div>
+        </section>
+        
+        <section data-anchor="why" class="why">
+            <div class="content">
+                <h2>How can we make it easier for seniors to perform their day to day activities?</h2>
+                <h3>We want <span>you</span> to come up with an idea to help seniors by designing and building something to help with everyday tasks and ease-of-mobility.</h3>
+                <section class="categories">
+                    <a data-cat="home">Home</a>
+                    <a data-cat="stores">Stores</a>
+                    <a data-cat="mobility">Mobility</a>
+                    <a data-cat="communication">Communication</a>
+                    <a data-cat="etc">etc.</a>
+                </section>
+                <section class="icons">
+                    <div data-icons="home" class="active">
+                        <div>
+                            <img src="img/icons/home-kitchen-blue.png">
+                            <span>Cooking</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/home-bedroom-blue.png">
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/home-bathroom-blue.png">
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/home-stairs-blue.png">
+                            <span>Stairs</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/home-cleaning-blue.png">
+                            <span>Cleaning</span>
+                        </div>
+                    </div>
+                    <div data-icons="stores">
+                        <div>
+                            <img src="img/icons/store-shelf-blue.png">
+                            <span>Reaching Shelves</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/store-cart-blue.png">
+                            <span>Pushing Carts</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/store-bag-blue.png">
+                            <span>Carrying Bags</span>
+                        </div>
+                    </div>
+                    <div data-icons="mobility">
+                        <div>
+                            <img src="img/icons/GeneralMobility_GettingAroundPlaces_blue.png">
+                            <span>Traveling</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/GeneralMobility_GettingInAndOutOfWheelchairs_blue.png">
+                            <span>Wheelchairs</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/GeneralMobility_GettingUpFromSeats_blue.png">
+                            <span>Seats</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/GeneralMobility_KeepingFit_blue.png">
+                            <span>Fitness</span>
+                        </div>
+                    </div>
+                    <div data-icons="communication">
+                        <div>
+                            <img src="img/icons/communication-family-blue.png">
+                            <span>Family</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/communication-read-blue.png">
+                            <span>Reading</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/communication-sight-blue.png">
+                            <span>Hearing and Vision Loss</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/communication-social-blue.png">
+                            <span>Social Media</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/communication-tech-blue.png">
+                            <span>Technology</span>
+                        </div>
+                    </div>
+                    <div data-icons="etc">
+                        <div>
+                            <img src="img/icons/Miscellaneous_KeepingTrackOfHealth_blue.png">
+                            <span>Tracking Health</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/Miscellaneous_MemoryLoss_blue.png">
+                            <span>Memory Loss</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/Miscellaneous_PreventitiveHealthMeasures_blue.png">
+                            <span>Preventative Measures</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
         
@@ -86,7 +194,7 @@
         </section>
         
         <section data-anchor="faq" class="faq">
-            <div class="content">
+            <div class="content clearfix">
                 <h2>Frequently Asked Questions</h2>
                 <article class="w1">
                     <h3>Who can attend?</h3>
@@ -131,6 +239,29 @@
                         Yes! Beginners are encouraged to come! We will be hosting some cool workshops to inspire you and kickstart your maker journey. If you want to learn to use a tool, just ask a volunteer and they can help you out!
                     </p>
                 </article>
+            </div>
+        </section>
+        
+        <section data-anchor="sponsors" class="sponsors">
+            <div class="content clearfix">
+                <h2>Our Sponsors</h2>
+                <img src="img/sponsors/sw-logo-color.png">
+                <img src="img/sponsors/autodesk2.png">
+                <img src="img/sponsors/MakerspaceWebsiteLogoTrans1.png">
+                <img src="img/sponsors/iefxlogo.png">
+                <img src="img/sponsors/CUDO.png">
+                <img src="img/sponsors/banner-long.fw_.png">
+                <img src="img/sponsors/clarklindsey.png">
+                <img src="img/sponsors/DFA_UIUC%20banner.png">
+                <img src="img/sponsors/inventables_logo.png">
+                <img src="img/sponsors/makerlab.png">
+                <img src="img/sponsors/OVCPE.PNG">
+            </div>
+        </section>
+        
+        <section data-anchor="contact" class="contact">
+            <div class="content">
+                <h3>for any questions or queries please contact us at <a href="mailto:makersuiuc@gmail.com">makersuiuc@gmail.com</a></h3>
             </div>
         </section>
 

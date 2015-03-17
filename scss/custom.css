@@ -160,7 +160,7 @@
 /* line 26, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/navigation */
 .top-bar a {
   color: #393939;
-  font-size: 1.3em;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 4px;
@@ -188,7 +188,7 @@ body {
 /* line 19, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .splash {
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: 100vh;
   min-height: 600px;
   position: relative;
   overflow: hidden; }
@@ -206,6 +206,15 @@ body {
     overflow: hidden; }
 
 /* line 40, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* line 49, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .landing {
   position: absolute;
   top: 50%;
@@ -216,17 +225,17 @@ body {
   max-width: 500px;
   max-height: 800px;
   text-align: center; }
-  /* line 54, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 63, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .landing img {
     max-width: 300px;
     height: auto; }
-  /* line 59, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 68, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .landing h3 {
     margin-top: 20px;
     font-weight: 400;
     font-size: 1.8em;
     color: #fff; }
-  /* line 65, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 74, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .landing button {
     width: 140px;
     height: 50px;
@@ -242,24 +251,24 @@ body {
     font-size: 1.3em;
     color: #fff;
     cursor: pointer; }
-    /* line 88, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+    /* line 97, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
     .landing button:hover {
       background-color: rgba(255, 255, 255, 0.2); }
 
-/* line 94, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+/* line 103, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .content {
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-  max-width: 1000px; }
+  max-width: 800px; }
 
-/* line 101, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+/* line 110, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .about {
   background: url(../img/bg3.jpg) no-repeat center center;
   background-size: cover;
   padding: 300px 0;
   text-align: center; }
-  /* line 108, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 117, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .about h2 {
     font-family: 'Crimson Text';
     font-weight: 400;
@@ -268,13 +277,131 @@ body {
     letter-spacing: 2px;
     color: #fff; }
 
-/* line 121, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+/* line 130, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.why {
+  padding: 120px 0;
+  text-align: center;
+  color: #021a8a; }
+  /* line 135, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .why > div {
+    max-width: 1200px; }
+  /* line 139, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .why h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 50px; }
+  /* line 145, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .why h3 {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto 80px; }
+    /* line 150, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+    .why h3 span {
+      color: #fc3f4c;
+      text-transform: uppercase; }
+
+/* line 158, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.categories a {
+  display: inline-block;
+  width: 120px;
+  height: 110px;
+  line-height: 240px;
+  margin-right: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8em;
+  color: #888; }
+  /* line 170, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .categories a:hover, .categories a.active {
+    color: #021a8a; }
+/* line 175, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.categories a:last-child {
+  margin-right: 0; }
+
+/* line 180, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+a[data-cat="home"] {
+  background: url(../img/icons/home-nocolor.png) no-repeat center center;
+  background-size: 100px 100px; }
+  /* line 184, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  a[data-cat="home"]:hover, a[data-cat="home"].active {
+    background: url(../img/icons/home-color.png) no-repeat center center;
+    background-size: 100px 100px; }
+
+/* line 190, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+a[data-cat="stores"] {
+  background: url(../img/icons/icons-02.png) no-repeat center center;
+  background-size: 100px 100px; }
+  /* line 194, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  a[data-cat="stores"]:hover, a[data-cat="stores"].active {
+    background: url(../img/icons/store-color.png) no-repeat center center;
+    background-size: 100px 100px; }
+
+/* line 200, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+a[data-cat="mobility"] {
+  background: url(../img/icons/mobility-nocolor.png) no-repeat center center;
+  background-size: 100px 100px; }
+  /* line 204, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  a[data-cat="mobility"]:hover, a[data-cat="mobility"].active {
+    background: url(../img/icons/mobility-color.png) no-repeat center center;
+    background-size: 100px 100px; }
+
+/* line 210, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+a[data-cat="communication"] {
+  background: url(../img/icons/communication-nocolor.png) no-repeat center center;
+  background-size: 100px 100px; }
+  /* line 214, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  a[data-cat="communication"]:hover, a[data-cat="communication"].active {
+    background: url(../img/icons/communication-color.png) no-repeat center center;
+    background-size: 100px 100px; }
+
+/* line 220, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+a[data-cat="etc"] {
+  background: url(../img/icons/misc-nocolor.png) no-repeat center center;
+  background-size: 100px 100px; }
+  /* line 224, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  a[data-cat="etc"]:hover, a[data-cat="etc"].active {
+    background: url(../img/icons/misc-color.png) no-repeat center center;
+    background-size: 100px 100px; }
+
+/* line 230, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.icons {
+  margin-top: 60px; }
+
+/* line 234, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.icons > div {
+  display: none;
+  margin: 0 auto; }
+  /* line 238, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .icons > div.active {
+    display: block; }
+  /* line 240, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .icons > div div {
+    display: inline-block;
+    margin-right: 40px; }
+  /* line 245, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .icons > div div:last-child {
+    margin-right: 0; }
+  /* line 247, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .icons > div img {
+    width: 90px; }
+  /* line 249, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .icons > div span {
+    display: block;
+    max-width: 90px; }
+
+/* line 256, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.icons [data-icons="communication"] div {
+  margin-right: 50px; }
+
+/* line 261, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .schedule {
   background: url(../img/bg4.jpg) no-repeat center center;
   background-size: cover;
   padding: 120px 0;
   color: #fff; }
-  /* line 128, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 268, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .schedule h2 {
     float: left;
     clear: none;
@@ -283,14 +410,14 @@ body {
     margin-right: 0%;
     text-transform: uppercase;
     font-weight: 400; }
-  /* line 135, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 275, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .schedule dl {
     float: left;
     clear: none;
     width: 75%;
     margin-left: 0%;
     margin-right: 0%; }
-  /* line 139, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 279, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .schedule dt {
     float: left;
     clear: none;
@@ -301,7 +428,7 @@ body {
     padding-right: 40px;
     font-weight: 400;
     text-align: right; }
-  /* line 148, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 288, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .schedule dd {
     float: left;
     clear: none;
@@ -311,7 +438,7 @@ body {
     font-family: 'Crimson Text';
     font-style: italic;
     font-size: 1.1em; }
-  /* line 153, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 293, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .schedule p {
     margin-top: 10px;
     padding-left: 20px;
@@ -320,45 +447,84 @@ body {
     letter-spacing: 1px;
     color: #eee; }
 
-/* line 163, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+/* line 303, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
 .faq {
   padding: 120px 0; }
-  /* line 166, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 306, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq h2 {
     margin-bottom: 40px;
     color: #fc3f4c;
     text-transform: uppercase;
     font-weight: 400; }
-  /* line 174, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 314, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq article {
     box-sizing: border-box;
     padding-right: 34px;
     margin-bottom: 50px; }
-  /* line 180, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 320, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq h3 {
     color: #021a8a;
     font-family: 'Crimson Text';
     font-weight: 700;
     font-style: italic;
-    letter-spacing: 1px; }
-  /* line 186, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+    letter-spacing: 1px;
+    line-height: 1.1em; }
+  /* line 327, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq p {
     margin-top: 12px;
     font-size: 0.8em;
+    line-height: 1.6em;
     color: #777; }
-  /* line 192, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 334, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq .w1 {
     float: left;
     clear: none;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: 0%; }
-  /* line 196, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  /* line 338, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
   .faq .w2 {
     float: left;
     clear: none;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: 0%; }
+
+/* line 343, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.sponsors {
+  padding: 120px 0;
+  background-color: #eee; }
+  /* line 347, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .sponsors h2 {
+    color: #021a8a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 140px; }
+  /* line 354, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .sponsors img {
+    width: 40%;
+    height: auto;
+    float: right;
+    margin-bottom: 50px; }
+  /* line 361, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .sponsors img:nth-child(odd) {
+    float: left; }
+
+/* line 366, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+.contact {
+  padding: 20px 0;
+  text-align: center; }
+  /* line 370, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .contact h3 {
+    font-weight: 400;
+    font-size: 1em; }
+  /* line 374, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+  .contact a {
+    text-decoration: none;
+    color: #021a8a; }
+    /* line 378, /Users/noah/Dropbox/programming/projects/cu-make-website/scss/custom.scss */
+    .contact a:hover {
+      color: #fc3f4c; }
 
 /*# sourceMappingURL=custom.css.map */

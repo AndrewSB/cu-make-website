@@ -30,4 +30,12 @@ $(document).ready(function() {
         }
 
     }).scroll();
+    
+    $('.categories a').on('click', function() {
+        var iconSet = $('.icons div[data-icons="' + $(this).attr('data-cat') + '"]');
+        
+        $('.icons div, .categories a').removeClass('active');
+        $(this).addClass('active');
+        iconSet.addClass('active');
+    });
 });
